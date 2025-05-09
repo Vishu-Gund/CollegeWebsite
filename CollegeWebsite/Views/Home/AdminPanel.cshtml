@@ -1,0 +1,137 @@
+﻿@{
+    ViewData["Title"] = "Admin Panel";
+}
+
+<style>
+    .admin-header {
+        background: linear-gradient(to right, #0d47a1, #1565c0);
+        color: white;
+        padding: 50px 20px;
+        text-align: center;
+        border-radius: 0 0 30px 30px;
+    }
+
+        .admin-header h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .admin-header p {
+            font-size: 16px;
+        }
+
+    .admin-panel-container {
+        max-width: 1000px;
+        margin: 50px auto;
+        padding: 30px;
+        border-radius: 20px;
+        background: #f8f9fa;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        animation: fadeIn 1s ease;
+    }
+
+    .admin-card {
+        border: 1px solid #ddd;
+        border-radius: 15px;
+        padding: 25px;
+        background-color: white;
+        transition: transform 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        text-align: center;
+    }
+
+        .admin-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+
+        .admin-card h4 {
+            margin-bottom: 10px;
+            color: #0d47a1;
+        }
+
+        .admin-card a {
+            text-decoration: none;
+            color: white;
+            background-color: #0d47a1;
+            padding: 10px 20px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+            .admin-card a:hover {
+                background-color: #1565c0;
+            }
+
+    @@keyframes fadeIn {
+        from
+
+    {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    }
+</style>
+
+<div class="admin-header">
+    <h1>Admin Dashboard</h1>
+    <p>Manage and monitor college activities efficiently</p>
+</div>
+
+<div class="admin-panel-container">
+    <div class="row text-center">
+        <div class="col-md-4 mb-4">
+            <div class="admin-card">
+                <h4>Admission Records</h4>
+                <p>View and manage all student admission forms</p>
+                <a href="/Admin/Admissions">Manage</a>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="admin-card">
+                <h4>Courses</h4>
+                <p>Add or update available courses</p>
+                <a href="/Admin/Courses">Manage</a>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="admin-card">
+                <h4>Faculty Info</h4>
+                <p>Edit faculty details and assignments</p>
+                <a href="/Admin/Faculty">Manage</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center">
+        <div class="col-md-4 mb-4">
+            <div class="admin-card">
+                <h4>Library Logs</h4>
+                <p>Track book issues and inventory</p>
+                <a href="/Admin/Library">Manage</a>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="admin-card">
+                <h4>Events & Notices</h4>
+                <p>Post new events, updates, or results</p>
+                <a href="/Admin/Events">Manage</a>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="admin-card">
+                <h4>User Settings</h4>
+                <p>Admin login, roles & password settings</p>
+                <a href="/Admin/Users">Manage</a>
+            </div>
+        </div>
+    </div>
+</div>

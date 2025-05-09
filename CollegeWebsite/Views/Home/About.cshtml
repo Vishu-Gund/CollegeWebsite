@@ -1,0 +1,94 @@
+﻿@{
+    ViewData["Title"] = "About Us";
+}
+
+<style>
+    .about-container {
+        max-width: 1000px;
+        margin: 50px auto;
+        padding: 30px;
+        background: linear-gradient(to right, #e0f7fa, #ffffff);
+        border-radius: 20px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        transition: all 0.3s ease-in-out;
+    }
+
+        .about-container:hover {
+            transform: scale(1.01);
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+        }
+
+    .about-title {
+        font-size: 36px;
+        font-weight: bold;
+        color: #0d47a1;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .about-text {
+        font-size: 18px;
+        line-height: 1.8;
+        color: #333;
+        text-align: justify;
+        animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .highlight {
+        color: #004d40;
+        font-weight: bold;
+    }
+
+    .college-image {
+        width: 100%;
+        border-radius: 15px;
+        margin-bottom: 25px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        transition: transform 0.4s ease;
+    }
+
+        .college-image:hover {
+            transform: scale(1.02);
+        }
+
+    @@keyframes fadeIn {
+        from
+
+    {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    }
+</style>
+
+<div class="about-container">
+    <div class="about-title">About Vishal College of Engineering, Solapur</div>
+
+    <!-- Add College Image -->
+    <img src="/images/college.jpg" alt="College Building" class="college-image" />
+
+
+    <div class="about-text">
+        <p>
+            <span class="highlight">Vishal College of Engineering, Solapur</span> was founded in the year 2000 with a commitment to deliver high-quality engineering education and foster innovation.
+        </p>
+        <p>
+            Over the years, the college has evolved into one of the most reputed institutions in the region, known for its academic excellence, vibrant campus life, and strong industry connections.
+        </p>
+        <p>
+            The college offers undergraduate and postgraduate programs across disciplines such as <span class="highlight">Computer Engineering, Information Technology, Civil, Mechanical, and AI & Data Science</span>.
+        </p>
+        <p>
+            With a team of experienced faculty and state-of-the-art infrastructure, the institution provides students with the right environment to grow intellectually and professionally.
+        </p>
+        <p>
+            Our mission is to empower students with knowledge, creativity, and the confidence to face global challenges. We aim to produce not just engineers, but future leaders and innovators.
+        </p>
+    </div>
+</div>

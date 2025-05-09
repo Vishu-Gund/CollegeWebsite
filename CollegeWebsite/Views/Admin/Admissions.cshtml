@@ -1,0 +1,43 @@
+﻿@model List<YourNamespace.Models.Admission>
+@{
+    ViewData["Title"] = "Admission Records";
+}
+<!-- Styles (same as before) -->
+<!-- Content -->
+<div class="admin-admissions-header">
+    <h1>Admission Records</h1>
+    <p>Manage all student admission data submitted via the admission form.</p>
+</div>
+
+<div class="container admissions-table-container">
+    <table class="table table-bordered table-hover rounded shadow-sm">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Full Name</th>
+                <th>Course</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Date Applied</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in Model)
+            {
+                <tr>
+                    <td>@student.Id</td>
+                    <td>@student.FullName</td>
+                    <td>@student.Course</td>
+                    <td>@student.Email</td>
+                    <td>@student.Phone</td>
+                    <td>@student.AppliedDate.ToShortDateString()</td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-info">View</a>
+                        <a href="#" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
