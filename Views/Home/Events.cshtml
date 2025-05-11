@@ -1,0 +1,100 @@
+﻿@{
+    ViewData["Title"] = "Events";
+}
+
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #f8f9fa;
+        padding: 30px;
+    }
+
+    .calendar-container {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        animation: fadeInGrid 0.8s ease-in;
+    }
+
+    .event-card {
+        background-color: #ffffff;
+        border-left: 6px solid #0d47a1;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease;
+        animation: slideUp 0.6s ease forwards;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+        }
+
+    .event-date {
+        font-size: 24px;
+        font-weight: bold;
+        color: #0d47a1;
+    }
+
+    .event-title {
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 10px;
+        color: #333;
+    }
+
+    .event-description {
+        font-size: 15px;
+        color: #555;
+        margin-top: 8px;
+    }
+
+    @@keyframes slideUp {
+        to
+
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    }
+
+    @@keyframes fadeInGrid {
+        from
+
+    {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    }
+</style>
+
+<h1 style="text-align:center; color:#0d47a1;">Upcoming Events Calendar</h1>
+
+<div class="calendar-container">
+    <div class="event-card" style="animation-delay: 0.2s;">
+        <div class="event-date">April 12</div>
+        <div class="event-title">TechFest 2025</div>
+        <div class="event-description">A national level technical festival with coding, robotics, and startup expos.</div>
+    </div>
+    <div class="event-card" style="animation-delay: 0.4s;">
+        <div class="event-date">May 10</div>
+        <div class="event-title">Annual Sports Meet</div>
+        <div class="event-description">Inter-department competitions including cricket, football, and athletics.</div>
+    </div>
+    <div class="event-card" style="animation-delay: 0.6s;">
+        <div class="event-date">June 5</div>
+        <div class="event-title">Convocation Ceremony</div>
+        <div class="event-description">Graduation ceremony for final-year students and award distribution.</div>
+    </div>
+</div>

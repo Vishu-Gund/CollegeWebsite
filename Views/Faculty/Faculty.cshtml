@@ -1,0 +1,78 @@
+﻿@{
+    ViewData["Title"] = "Our Faculty";
+}
+
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #f4f6f9;
+        margin: 0;
+        padding: 0;
+    }
+
+    .faculty-container {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 0.8s ease-in-out;
+    }
+
+        .faculty-container h1 {
+            text-align: center;
+            color: #0d47a1;
+            margin-bottom: 25px;
+        }
+
+    .faculty-list {
+        list-style: none;
+        padding: 0;
+    }
+
+        .faculty-list li {
+            background-color: #e3f2fd;
+            margin: 12px 0;
+            padding: 15px 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            font-size: 18px;
+        }
+
+            .faculty-list li:hover {
+                transform: scale(1.03);
+                background-color: #bbdefb;
+            }
+
+        .faculty-list a {
+            text-decoration: none;
+            color: #0d47a1;
+            font-weight: 600;
+            display: block;
+        }
+
+    @@keyframes fadeIn {
+        from
+
+    {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    }
+</style>
+
+<div class="faculty-container">
+    <h1>Meet Our Faculty</h1>
+    <ul class="faculty-list">
+        <li><a asp-controller="Faculty" asp-action="Sharma">Dr. A. Sharma – Principal</a></li>
+        <li><a asp-controller="Faculty" asp-action="Mehta">Prof. B. Mehta – Head of Computer Engineering</a></li>
+        <li><a asp-controller="Faculty" asp-action="Gupta">Prof. C. Gupta – Head of Mechanical Engineering</a></li>
+    </ul>
+</div>

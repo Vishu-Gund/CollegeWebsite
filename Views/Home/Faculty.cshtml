@@ -1,0 +1,90 @@
+﻿@{
+    ViewData["Title"] = "Faculty";
+}
+
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #f4f7fc;
+    }
+
+    .faculty-section {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 30px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 1s ease-in-out;
+    }
+
+        .faculty-section h1 {
+            text-align: center;
+            color: #0d47a1;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+    .faculty-list {
+        list-style: none;
+        padding-left: 0;
+    }
+
+        .faculty-list li {
+            background: linear-gradient(to right, #e3f2fd, #ffffff);
+            margin: 15px 0;
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-size: 18px;
+            color: #333;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+            transform: translateX(-20px);
+            opacity: 0;
+            animation: slideIn 0.6s ease forwards;
+        }
+
+            .faculty-list li:nth-child(1) {
+                animation-delay: 0.1s;
+            }
+
+            .faculty-list li:nth-child(2) {
+                animation-delay: 0.2s;
+            }
+
+            .faculty-list li:nth-child(3) {
+                animation-delay: 0.3s;
+            }
+
+    @@keyframes fadeIn {
+        from
+
+    {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+    }
+
+    @@keyframes slideIn {
+        to
+
+    {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    }
+</style>
+
+<div class="faculty-section">
+    <h1>Our Faculty</h1>
+    <ul class="faculty-list">
+        <li><a href="/Faculty/Sharma" class="faculty-link">👨‍🏫 Dr. A. Sharma – Principal</a></li>
+        <li><a href="/Faculty/Mehta" class="faculty-link">💻 Prof. B. Mehta – Head of Computer Engineering</a></li>
+        <li><a href="/Faculty/Gupta" class="faculty-link">🔧 Prof. C. Gupta – Head of Mechanical Engineering</a></li>
+    </ul>
+
+</div>

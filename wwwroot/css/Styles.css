@@ -1,0 +1,32 @@
+﻿body {
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 15px 0;
+}
+
+.navbar {
+    margin-bottom: 30px;
+}
+
+.department {
+    margin-bottom: 30px;
+}
+
+    .department img {
+        max-width: 300px;
+        height: auto;
+    }
+.faculty-link {
+    text-decoration: none;
+    color: #0d47a1;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+    .faculty-link:hover {
+        color: #1565c0;
+    }
+

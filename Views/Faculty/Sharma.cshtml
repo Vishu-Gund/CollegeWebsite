@@ -1,0 +1,61 @@
+﻿@* Sharma.cshtml *@
+@{
+    ViewData["Title"] = "Dr. A. Sharma - Principal";
+}
+
+<style>
+    .faculty-profile {
+        max-width: 900px;
+        margin: 30px auto;
+        padding: 20px;
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        animation: slideUp 0.7s ease-in-out;
+    }
+
+        .faculty-profile h1 {
+            color: #0d47a1;
+            margin-bottom: 10px;
+        }
+
+        .faculty-profile h3 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .faculty-profile ul {
+            padding-left: 20px;
+            color: #555;
+        }
+
+    @@keyframes slideUp {
+        from
+
+    {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    }
+</style>
+
+<div class="faculty-profile">
+    <h1>Dr. A. Sharma</h1>
+    <h3>Principal</h3>
+    <p>
+        Dr. Sharma has over 25 years of experience in engineering education and administration. He has guided several research projects and holds a Ph.D. in Computer Science.
+    </p>
+    <ul>
+        <li>Ph.D. in Computer Science</li>
+        <li>15+ International Publications</li>
+        <li>Founder of the Research Cell at VCOE</li>
+        <li>Worked with AICTE curriculum development committee</li>
+    </ul>
+</div>

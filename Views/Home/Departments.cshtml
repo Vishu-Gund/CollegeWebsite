@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewData["Title"] = "Departments";
+}
+
+<style>
+    .departments-container {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+
+    .department-card {
+        background: linear-gradient(145deg, #ffffff, #e6ecf3);
+        border-radius: 16px;
+        padding: 20px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        text-decoration: none;
+        color: inherit;
+    }
+
+        .department-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        }
+
+    .department-title {
+        font-size: 22px;
+        font-weight: bold;
+        color: #0d47a1;
+        margin-bottom: 10px;
+    }
+
+    .department-description {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #444;
+    }
+</style>
+
+<h1 style="text-align: center; margin-top: 30px; color: #0d47a1;">Our Departments</h1>
+
+<div class="departments-container">
+    <a href="/Departments/CE" class="department-card">
+        <div class="department-title">Computer Engineering</div>
+        <div class="department-description">Software development, programming, AI, and data systems.</div>
+    </a>
+
+    <a href="/Departments/IT" class="department-card">
+        <div class="department-title">Information Technology</div>
+        <div class="department-description">System administration, networking, and cybersecurity.</div>
+    </a>
+
+    <a href="/Departments/ENTC" class="department-card">
+        <div class="department-title">Electronics and Telecommunication</div>
+        <div class="department-description">Circuits, communication systems, embedded design, IoT.</div>
+    </a>
+
+    <a href="/Departments/Mech" class="department-card">
+        <div class="department-title">Mechanical Engineering</div>
+        <div class="department-description">Thermodynamics, fluid mechanics, and CAD.</div>
+    </a>
+
+    <a href="/Departments/Civil" class="department-card">
+        <div class="department-title">Civil Engineering</div>
+        <div class="department-description">Structural design, construction management, geotechnics.</div>
+    </a>
+
+    <a href="/Departments/AI" class="department-card">
+        <div class="department-title">AI & Data Science</div>
+        <div class="department-description">Machine learning, data mining, predictive modeling.</div>
+    </a>
+
+    <a href="/Departments/MBA" class="department-card">
+        <div class="department-title">MBA</div>
+        <div class="department-description">Finance, marketing, HR, and operations management.</div>
+    </a>
+</div>
+
+/* Now, create separate files: CE.cshtml, IT.cshtml, ENTC.cshtml, Mech.cshtml, Civil.cshtml, AI.cshtml, MBA.cshtml with similar structure */

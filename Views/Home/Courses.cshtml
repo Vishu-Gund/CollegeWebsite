@@ -1,0 +1,79 @@
+﻿@{
+    ViewData["Title"] = "Courses Offered";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container my-5">
+    <h1 class="text-center mb-4"> * Courses Offered * </h1>
+
+    <!-- Filter Buttons -->
+    <div class="text-center mb-4">
+        <button class="btn btn-outline-primary me-2" onclick="filterCourses('ug')">Undergraduate</button>
+        <button class="btn btn-outline-success me-2" onclick="filterCourses('pg')">Postgraduate</button>
+        <button class="btn btn-outline-dark" onclick="filterCourses('all')">Show All</button>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4" id="courseContainer">
+        <!-- Example UG Course -->
+        <div class="col course-card ug">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Computer Engineering</h5>
+                    <p class="card-text">Focuses on algorithms, data structures, and software development. Prepares students for roles in software engineering and IT consulting.</p>
+                    <a href="/Home/AdmissionForm" class="btn btn-success">Apply Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col course-card ug">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Civil Engineering</h5>
+                    <p class="card-text">Deals with the design and construction of buildings, roads, and bridges. Opens opportunities in public works and infrastructure firms.</p>
+                    <a href="/Home/AdmissionForm" class="btn btn-success">Apply Now</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Add other UG courses here similarly with class "ug" -->
+        <!-- Example PG Course -->
+        <div class="col course-card pg">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">M.Tech in Data Science</h5>
+                    <p class="card-text">Focuses on machine learning, statistics, and big data tools. Ideal for careers in AI, analytics, and data engineering.</p>
+                    <a href="/Home/AdmissionForm" class="btn btn-success">Apply Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col course-card pg">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">M.E. in Thermal Engineering</h5>
+                    <p class="card-text">Specializes in thermodynamics, energy systems, and HVAC. Suitable for energy sector and design-based roles.</p>
+                    <a href="/Home/AdmissionForm" class="btn btn-success">Apply Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add other PG courses here similarly with class "pg" -->
+    </div>
+</div>
+<div> class="hero-section"> </div>
+<!-- Top Right Quick Links -->
+
+<script>
+    function filterCourses(type) {
+        const cards = document.querySelectorAll(".course-card");
+        cards.forEach(card => {
+            if (type === 'all') {
+                card.style.display = 'block';
+            } else {
+                card.style.display = card.classList.contains(type) ? 'block' : 'none';
+            }
+        });
+    }
+</script>

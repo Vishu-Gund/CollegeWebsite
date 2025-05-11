@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\Home\NewFolder1\**" />
+    <Compile Remove="Views\Home\NewFolder2\**" />
+    <Compile Remove="Views\Home\NewFolder3\**" />
+    <Compile Remove="Views\Home\NewFolder4\**" />
+    <Compile Remove="Views\Home\NewFolder5\**" />
+    <Compile Remove="Views\Home\NewFolder6\**" />
+    <Compile Remove="Views\Home\NewFolder7\**" />
+    <Compile Remove="Views\NewFolder\**" />
+    <Compile Remove="wwwroot\NewFolder\**" />
+    <Content Remove="Views\Home\NewFolder1\**" />
+    <Content Remove="Views\Home\NewFolder2\**" />
+    <Content Remove="Views\Home\NewFolder3\**" />
+    <Content Remove="Views\Home\NewFolder4\**" />
+    <Content Remove="Views\Home\NewFolder5\**" />
+    <Content Remove="Views\Home\NewFolder6\**" />
+    <Content Remove="Views\Home\NewFolder7\**" />
+    <Content Remove="Views\NewFolder\**" />
+    <Content Remove="wwwroot\NewFolder\**" />
+    <EmbeddedResource Remove="Views\Home\NewFolder1\**" />
+    <EmbeddedResource Remove="Views\Home\NewFolder2\**" />
+    <EmbeddedResource Remove="Views\Home\NewFolder3\**" />
+    <EmbeddedResource Remove="Views\Home\NewFolder4\**" />
+    <EmbeddedResource Remove="Views\Home\NewFolder5\**" />
+    <EmbeddedResource Remove="Views\Home\NewFolder6\**" />
+    <EmbeddedResource Remove="Views\Home\NewFolder7\**" />
+    <EmbeddedResource Remove="Views\NewFolder\**" />
+    <EmbeddedResource Remove="wwwroot\NewFolder\**" />
+    <None Remove="Views\Home\NewFolder1\**" />
+    <None Remove="Views\Home\NewFolder2\**" />
+    <None Remove="Views\Home\NewFolder3\**" />
+    <None Remove="Views\Home\NewFolder4\**" />
+    <None Remove="Views\Home\NewFolder5\**" />
+    <None Remove="Views\Home\NewFolder6\**" />
+    <None Remove="Views\Home\NewFolder7\**" />
+    <None Remove="Views\NewFolder\**" />
+    <None Remove="wwwroot\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\Departments\Machanical.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Departments\Mechanical.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Admin\" />
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+</Project>
